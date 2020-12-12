@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                font-family: sans-serif;
+                text-align: center;
+            }
+
+            label{
+                font-size: 18px;
+                display: block;
+                padding-bottom: 10px;
+                padding-top: 10px;
+            }
+            input{
+                display: inline;
+            }
+            form{
+                background-color: rgb(29, 204, 73);
+                padding: 40px 40px 40px 40px4
+            }
+            input.checkbox{
+                display: inline;
+            }
+        </style>
+
+    </head>
+        <body>
+            <h1 id="title">Movie Survey Form</h1>
+            <p id="description">A survey about your favorite movies</p>
+            <form id="survey-form">
+               <label id="name-label">Name </label>
+                <input type="text" name="name" id="name" required placeholder="Enter your name"> </input> <br>
+               <label id="email-label">Email</label> 
+                <input type="email" name="email" id="email" required placeholder="Enter yourEmail"> </input><br>
+               <label id="number-label">Age(optional)</label> <input type="number" name="number" id="number" min="10" max="99" required placeholder="Age"> </input> <br>
+                
+                
+                <label for="movies">What is your favorite genre? </label>
+                <select id="dropdown" name="movies">
+                    <option value="action">Action</option>
+                    <option value="romance">Romance</option>
+                    <option value="horror">Horror</option>
+                    <option value="science fiction">Science fiction</option>
+                    <option value="other">Other</option>
+                </select> <br>
+                
+                <P>How many movies do you watch movies in a week?</P>
+                <input type="radio" id="5 " name="name" value="5 "> 5  <br>
+                <input type="radio" id="4" name="name" value=" 4"> 4 <br>
+                <input type="radio" id="3" name="name" value="3"> 3 <br>
+                <input type="radio" id="2" name="name" value="2"> 2 <br>
+                <input type="radio" id="1" name="name" value="1"> 1 <br>
+
+                <p>What is your favorite platform? </p>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Netflix </label><br>
+
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> Hulu </label><br>
+
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> Other </label><br>
+
+
+                <textarea id="comments " name="comments" rows="5" cols="50">
+                Please leave any additional feedbacks
+                </textarea>
+
+
+                <input type="submit" id="submit">
+
+
+
+            </form>
+
+            
+            <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+        </body>
+    
+
+
+</html>
